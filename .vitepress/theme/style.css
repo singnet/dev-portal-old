@@ -133,24 +133,21 @@ header span {
   background: var(--vp-c-white);
 }
 
-header span:hover {
-  color: var(--vp-c-white)
-}
-
-header a.active {
+header a.active,
+header span:hover,
+.title span,
+.VPNavScreenMenuLink,
+.dark .VPNavScreenMenuLink {
   color: var(--vp-c-white) !important
 }
 
-div.titles span{
+div.titles span {
   color: var(--vp-c-black) !important
 }
 
-header a.VPLink.link.VPNavBarMenuLink,  header button span {
+header a.VPLink.link.VPNavBarMenuLink,
+header button span {
   color: var(--vp-c-lightgray)
-}
-
-.title span, .VPNavScreenMenuLink {
-  color: var(--vp-c-white)
 }
 
 .vp-doc.container {
@@ -159,7 +156,9 @@ header a.VPLink.link.VPNavBarMenuLink,  header button span {
 }
 
 
-.dark .VPNavBar.has-sidebar.top, .dark .content-body {
+.dark .VPNavBar.has-sidebar.top,
+.dark .content-body,
+.dark .VPNavBar .wrapper {
   background: var(--vp-c-black) !important;
 }
 
@@ -167,21 +166,9 @@ header a.VPLink.link.VPNavBarMenuLink,  header button span {
   border-bottom-color: transparent !important;
 }
 
-.content-body {
-  background: var(--vp-c-purple) !important;
-}
-
-
+.content-body,
 .VPNavBar .wrapper {
-  background: var(--vp-c-purple);
-}
-
-.dark .VPNavBar .wrapper{
-  background: var(--vp-c-black);
-}
-
-.dark .VPNavScreenMenuLink {
-  color: var(--vp-c-white);
+  background: var(--vp-c-purple) !important;
 }
 
 .VPContent.is-home {
@@ -212,7 +199,8 @@ img {
   font-size: 16px;
 }
 
-.VPNavScreenMenu.menu nav, .VPNavScreenMenuGroup span {
+.VPNavScreenMenu.menu nav,
+.VPNavScreenMenuGroup span {
   color: var(--vp-c-black);
 }
 
@@ -224,16 +212,19 @@ body {
   font-weight: 500 !important;
 }
 
-.dark .VPNavScreenMenuGroup span{
+.dark .VPNavScreenMenuGroup span {
   color: var(--vp-c-white);
 }
 
-.content-body .container span, .dark .vp-icon.DocSearch-Search-Icon {
+.content-body .container span,
+.dark .vp-icon.DocSearch-Search-Icon {
   background: var(--vp-c-white) !important;
 }
+
 .vp-icon.DocSearch-Search-Icon {
   background: var(--vp-c-default-1);
 }
+
 .VPNavBarSearch {
   display: flex;
   align-items: center;
@@ -251,8 +242,6 @@ body {
 .DocSearch-Button-Keys {
   display: none !important;
 }
-
-
 
 .VPContent.has-sidebar+footer {
   display: none;
