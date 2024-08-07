@@ -25,7 +25,7 @@ export default [
             },
             {
                 link: "https://staking.singularitynet.io/howitworks",
-                text: "AGI Staking",
+                text: "AGIX Staking",
             },
             {
                 link: "https://publisher.singularitynet.io/",

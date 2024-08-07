@@ -136,17 +136,22 @@ header span {
 header a.active,
 header span:hover,
 .title span,
-.VPNavScreenMenuLink,
-.dark .VPNavScreenMenuLink {
+.dark div.titles span,
+.dark .VPNavScreenMenuLink,
+.dark .VPNavScreenMenuLink,
+.dark .VPNavScreenMenuGroup span{
   color: var(--vp-c-white) !important
 }
 
-div.titles span {
+div.titles span,
+.VPNavScreenMenu.menu nav,
+.VPNavScreenMenuGroup span {
   color: var(--vp-c-black) !important
 }
 
 header a.VPLink.link.VPNavBarMenuLink,
-header button span {
+header button span,
+.vpi-chevron-down.text-icon {
   color: var(--vp-c-lightgray)
 }
 
@@ -195,14 +200,12 @@ img {
   margin: auto;
 }
 
-.VPNavBarMenu.menu span {
+.VPNavBarMenu.menu span,
+.VPNavScreenMenu.menu span,
+.VPLink.link.VPNavScreenMenuLink{
   font-size: 16px;
 }
 
-.VPNavScreenMenu.menu nav,
-.VPNavScreenMenuGroup span {
-  color: var(--vp-c-black);
-}
 
 body {
   font-family: Mulish;
@@ -210,10 +213,6 @@ body {
 
 .VPNavBarMenu.menu span {
   font-weight: 500 !important;
-}
-
-.dark .VPNavScreenMenuGroup span {
-  color: var(--vp-c-white);
 }
 
 .content-body .container span,
