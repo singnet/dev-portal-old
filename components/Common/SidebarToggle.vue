@@ -34,8 +34,9 @@ export default {
     }
 
     const storedIsSidebarOpenState = window.localStorage.getItem("isSidebarOpen");
+
     this.isSidebarOpen = !storedIsSidebarOpenState || storedIsSidebarOpenState === SidebarStates.OPEN;
-    
+
     this.toggleClassName();
   },
   methods: {
@@ -44,10 +45,12 @@ export default {
         return;
       }
 
+      const bodyClassList = window.document.body.classList;
+
       if (this.isSidebarOpen) {
-        window.document.body.classList.remove('sidebar-closed');
+        bodyClassList.remove('sidebar-closed');
       } else {
-        window.document.body.classList.add('sidebar-closed');
+        bodyClassList.add('sidebar-closed');
       }
     },
     toggle() {
@@ -56,8 +59,10 @@ export default {
       }
 
       this.isSidebarOpen = !this.isSidebarOpen;
-      window.localStorage.setItem('isSidebarOpen', this.isSidebarOpen ? SidebarStates.OPEN : SidebarStates.CLOSED);
+
       this.toggleClassName();
+
+      window.localStorage.setItem('isSidebarOpen', this.isSidebarOpen ? SidebarStates.OPEN : SidebarStates.CLOSED);
     }
   }
 }
