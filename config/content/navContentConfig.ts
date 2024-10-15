@@ -1,7 +1,7 @@
 import type { DefaultTheme } from "vitepress";
 
 export default [
-  { text: "Home", link: "/", activeMatch: '' },
+  { text: "Home", link: "/" },
   { text: "Docs", link: "/docs/", activeMatch: '/docs/' },
   {
     text: "Products",
